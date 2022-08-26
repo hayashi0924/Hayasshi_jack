@@ -30,7 +30,7 @@ public class Deck {
      * 山札からカードをひき、そのカードを削除するメソッド
      * @return Card 引いたカード
      */
-    public Card isTopCard(){
+    public Card pulledToTheTop(){
         Card card = deck.get(new java.util.Random().nextInt(deck.size()));
         deck.remove(card);
         return card;
