@@ -9,8 +9,8 @@ import java.io.IOException;
  * ルールメソッドを定めるクラス
  * フィールドは存在しない
  */
-public class Main {
-    public static void main(String[] args) {
+public class Explanation {
+    public static void main() {
             /**
              * ファイルの読み込み先：初期値＝null
              */
@@ -21,7 +21,7 @@ public class Main {
              */
             String line = null;
             try {
-                fr = new FileReader("rule/rule.txt");
+                fr = new FileReader("rule.txt");
                 BufferedReader br = new BufferedReader(fr);
                 while ((line = br.readLine()) != null) {
                     System.out.println(line);
@@ -40,7 +40,5 @@ public class Main {
                 }
             }
         }
-
-
     }
 }
