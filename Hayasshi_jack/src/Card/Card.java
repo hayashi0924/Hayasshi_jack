@@ -14,10 +14,19 @@ public class Card {
         this.number = number;
     }
 
-    public static Card makeCard(Mark mark, int number){
+    protected static Card makeCard(Mark mark, int number){
         if(!CardNumber.numberIsValid(number)){
             ;
         }
         return new Card(mark, number);
+    }
+
+    public int giveNumber(){
+        return this.number;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("模様：%s\n番号：%d", this.mark, this.number );
     }
 }
