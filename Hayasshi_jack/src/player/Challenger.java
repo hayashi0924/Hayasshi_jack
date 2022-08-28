@@ -2,10 +2,10 @@ package player;
 
 import card.Card;
 
-public class Charenger extends Player {
+public class Challenger extends Player {
     private boolean drawContinue = true;
 
-    public Charenger(Card firstCard, Card secondCard) {
+    public Challenger(Card firstCard, Card secondCard) {
         super(firstCard, secondCard);
     }
 

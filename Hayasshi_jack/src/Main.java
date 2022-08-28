@@ -1,5 +1,5 @@
 import card.Deck;
-import player.Charenger;
+import player.Challenger;
 import player.Dealer;
 
 public class Main {
@@ -7,7 +7,7 @@ public class Main {
         rule.Explanation.main();
         Deck deck = card.Deck.makeDeck();
 
-        Charenger charenger = new Charenger(deck.pulledToTheTop(), deck.pulledToTheTop());
+        Challenger charenger = new Challenger(deck.pulledToTheTop(), deck.pulledToTheTop());
         Dealer dealer = new Dealer(deck.pulledToTheTop(), deck.pulledToTheTop());
 
         charenger.OpenCard();
