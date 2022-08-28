@@ -1,6 +1,6 @@
-package Player;
+package player;
 
-import Card.Card;
+import card.Card;
 
 public class Charenger extends Player {
     private boolean drawContinue = true;

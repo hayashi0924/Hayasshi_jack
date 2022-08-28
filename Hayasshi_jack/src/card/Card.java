@@ -1,4 +1,4 @@
-package Card;
+package card;
 
 /**
  * カードを作るクラス

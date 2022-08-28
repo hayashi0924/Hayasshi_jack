@@ -1,4 +1,4 @@
-package Card;
+package card;
 
 /**
  * enumクラス：トランプの模様を定めるクラス

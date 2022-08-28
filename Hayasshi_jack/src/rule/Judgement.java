@@ -1,7 +1,6 @@
 package rule;
 
-import Card.Card;
-import Player.*;
+import player.*;
 
 public class Judgement {
     private static final int UPPER_LIMIT = 21;

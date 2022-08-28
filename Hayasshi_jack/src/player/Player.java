@@ -1,6 +1,6 @@
-package Player;
+package player;
 
-import Card.*;
+import card.*;
 import rule.Judgement;
 
 import java.util.*;
