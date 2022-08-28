@@ -1,4 +1,4 @@
-package Card;
+package card;
 
 /**
  * 値オブジェクトを定めるクラス

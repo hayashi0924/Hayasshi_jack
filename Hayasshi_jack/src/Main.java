@@ -1,13 +1,13 @@
-import Card.Deck;
-import Player.Charenger;
-import Player.Dealer;
+import card.Deck;
+import player.Challenger;
+import player.Dealer;
 
 public class Main {
     public static void main(String[] args) {
         rule.Explanation.main();
-        Deck deck = Card.Deck.makeDeck();
+        Deck deck = card.Deck.makeDeck();
 
-        Charenger charenger = new Charenger(deck.pulledToTheTop(), deck.pulledToTheTop());
+        Challenger charenger = new Challenger(deck.pulledToTheTop(), deck.pulledToTheTop());
         Dealer dealer = new Dealer(deck.pulledToTheTop(), deck.pulledToTheTop());
 
         charenger.OpenCard();
