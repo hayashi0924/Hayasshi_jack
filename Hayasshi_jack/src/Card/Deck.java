@@ -12,18 +12,23 @@ public class Deck {
      * 山札
      * 外部から操作されることを防ぐため、privateとした
      */
-    private static List<Card> deck = new ArrayList<>();
+    private List<Card> deck = new ArrayList<>();
+    private Deck(List<Card> deck){
+        this.deck = deck;
+    }
 
     /**
      * 山札を作成するメソッド
      */
-    public static void makeDeck(){
+    public static Deck makeDeck(){
+        List<Card> cards = new ArrayList<>();
         for(int i = 1; CardNumber.numberIsValid(i); i++){
-            deck.add(Card.makeCard(Mark.HEART, i));
-            deck.add(Card.makeCard(Mark.DIAMOND, i));
-            deck.add(Card.makeCard(Mark.CLUB, i));
-            deck.add(Card.makeCard(Mark.SPADE, i));
+            cards.add(Card.makeCard(Mark.HEART, i));
+            cards.add(Card.makeCard(Mark.DIAMOND, i));
+            cards.add(Card.makeCard(Mark.CLUB, i));
+            cards.add(Card.makeCard(Mark.SPADE, i));
         }
+        return new Deck(cards);
     }
 
     /**
